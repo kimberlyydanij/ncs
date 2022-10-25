@@ -16,12 +16,16 @@ public class ProductTest {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		Product pd = new Product();
-		System.out.println("정보를 입력하세요. name  / price(원) / quantity(개)");
-	    pd.setName(sc.next());
-		pd.setPrice(sc.nextInt());
+		System.out.println("정보를 입력하세요.\n");
+		System.out.print("Name : ");
+		pd.setName(sc.nextLine());
+		System.out.print("Price(원) : ");
+	    pd.setPrice(sc.nextInt());
+	    System.out.print("Quantity(개) : ");
 		pd.setQuantity(sc.nextInt());
+		pd.information();
 		
-		System.out.println(Information(pd));
+		//System.out.println(pd.information(data));
 	} // end main
 
 } // end class

@@ -17,12 +17,6 @@ public class Product {
 		this.quantity = quantity;
 	}
 	
-	public String info(String data) {
-				
-		
-		return data;
-	}
-
 	public String getName() {
 		return name;
 	}
@@ -47,8 +41,17 @@ public class Product {
 		this.quantity = quantity;
 	}
 	
-	public String Information(String data) {
-		
-	return data;
+	public String information() {
+		String data="";
+		System.out.println();
+		System.out.println("상품명 : "+ this.getName());
+		System.out.printf("가격 : %s 원\n",this.getPrice());
+		System.out.printf("수량 : %s 개\n",this.getQuantity());
+		System.out.printf("총 구매 가격 : %d 원",(int)this.getPrice() * (int)this.getQuantity());
+	
+		return data;
+	
+	}
+
 }
 
